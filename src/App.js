@@ -5,7 +5,7 @@ import AddCourse from './components/addcourse';
 import ViewCourse from './components/viewcourse';
 import DeleteCourse from './components/deletecourse';
 import EditCourse from './components/editcourse';
-import Profile from './moreinfo/profile';
+import EditPage from './components/editpage'
 
 
 function App() {
@@ -17,8 +17,9 @@ function App() {
           <Route exact path="/admin/addCourse" element={<AddCourse/>}/>
           <Route exact path="/admin/viewCourse" element={<ViewCourse/>}/>
           <Route exact path="/admin/deleteCourse" element={<DeleteCourse/>}/>
-          <Route exact path="/admin/editCourse/:id" element={<EditCourse/>}/>
-          <Route exact path="/admin/Profile" element={<Profile/>}/>
+          <Route exact path="/admin/editPage" element={<EditPage/>}/>
+          <Route exact path="/admin/editCourse/:courseid" element={<EditCourse/>}/>
+          
           </Routes>
       </div>
     </BrowserRouter>

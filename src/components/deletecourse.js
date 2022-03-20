@@ -40,7 +40,7 @@ const DeleteCourse = () => {
         <ReactBootStarp.Nav.Link href="/admin/addCourse">Add-Course</ReactBootStarp.Nav.Link>
         <ReactBootStarp.Nav.Link href="/admin/viewCourse">View-Course</ReactBootStarp.Nav.Link>
         <ReactBootStarp.Nav.Link href="/admin/deleteCourse">Delete-Course</ReactBootStarp.Nav.Link>
-        <ReactBootStarp.Nav.Link href="/admin/editCourse/:courseid">Edit-Course</ReactBootStarp.Nav.Link>
+        <ReactBootStarp.Nav.Link href="/admin/editPage">Edit-Course</ReactBootStarp.Nav.Link>
         <ReactBootStarp.Nav.Link href="/">News Feed</ReactBootStarp.Nav.Link>
     </ReactBootStarp.Nav>
     <ReactBootStarp.Nav>
@@ -69,7 +69,7 @@ const DeleteCourse = () => {
         <ReactBootStarp.Card.Text>
              {course.courseduration}
         </ReactBootStarp.Card.Text>
-        <ReactBootStarp.Button variant="primary" onClick={()=>deleteCourseById(course.courseid)}>
+        <ReactBootStarp.Button variant="danger" onClick={()=>deleteCourseById(course.courseid)}>
         Delete</ReactBootStarp.Button>
         </ReactBootStarp.Card.Body>
     </ReactBootStarp.Card>

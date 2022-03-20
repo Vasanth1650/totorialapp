@@ -5,6 +5,7 @@ class ViewService{
     getAllCourse(){
         return axios.get(VIEW_BASE_REST_API_URL)
     }
+    
 }
 
 export default new ViewService();

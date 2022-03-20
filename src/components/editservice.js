@@ -1,20 +1,17 @@
 import axios from "axios";
 
-const VIEW_BASE_REST_API_URL = 'http://localhost:8080/course';
+const EDIT_BASE_REST_API_URL = 'http://localhost:8080/course';
 
 class EditService{
-    getCourseById(courseid){
-        return axios.get(VIEW_BASE_REST_API_URL+'/'+courseid);
-    }
-
-    updateCourse(courseid,course){
-        return axios.put(VIEW_BASE_REST_API_URL+'/'+course+'/'+courseid);
-    }   
-
-    createCourse(addCourse){
-        return axios.post(VIEW_BASE_REST_API_URL+'/'+addCourse);
-    }
-
+   addCourse(course){
+       return axios.post(EDIT_BASE_REST_API_URL+'/'+course)
+   }
+   getCourseById(courseid){
+       return axios.get(EDIT_BASE_REST_API_URL+'/'+courseid)
+   }
+   updateCourse(courseid,course){
+       return axios.put(EDIT_BASE_REST_API_URL+'/updatecourse/'+courseid,course);
+   }
 
 }
 

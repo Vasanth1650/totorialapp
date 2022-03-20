@@ -36,7 +36,7 @@ function AddCourse(){
             <ReactBootStarp.Nav.Link href="/admin/addCourse">Add-Course</ReactBootStarp.Nav.Link>
             <ReactBootStarp.Nav.Link href="/admin/viewCourse">View-Course</ReactBootStarp.Nav.Link>
             <ReactBootStarp.Nav.Link href="/admin/deleteCourse">Delete-Course</ReactBootStarp.Nav.Link>
-            <ReactBootStarp.Nav.Link href="/admin/editCourse/:courseid">Edit-Course</ReactBootStarp.Nav.Link>
+            <ReactBootStarp.Nav.Link href="/admin/editPage">Edit-Course</ReactBootStarp.Nav.Link>
             <ReactBootStarp.Nav.Link href="/">News Feed</ReactBootStarp.Nav.Link>
         </ReactBootStarp.Nav>
     <ReactBootStarp.Nav>
